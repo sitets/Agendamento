@@ -25,7 +25,7 @@ document.getElementById('form-agendamento').addEventListener('submit', function 
   const numeroWhats = '5511999999999';
 
   // URL do WhatsApp
-  const urlWhats = `https://wa.me/${719989536279}?text=${textoWhats}`;
+  const urlWhats = `https://wa.me/${71989536279}?text=${textoWhats}`;
 
   // Abrir WhatsApp numa nova aba/janela
   window.open(urlWhats, '_blank');
