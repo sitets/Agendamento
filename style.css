@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,7 +12,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 150px;
@@ -91,8 +91,6 @@ button:hover {
   color: #28a745;
 }
 
-/* Estilo da lista de agendamentos */
-
 #agendamentos {
   margin-top: 30px;
 }
@@ -138,7 +136,7 @@ button:hover {
 #lista-agendamentos button:hover {
   background: #ff638d;
 }
-/* Fade-in do container */
+
 .fade-in {
   animation: fadeIn 0.8s ease-in-out;
 }
@@ -154,7 +152,6 @@ button:hover {
   }
 }
 
-/* Estilo da mensagem */
 #mensagem {
   margin-top: 20px;
   text-align: center;
@@ -162,8 +159,75 @@ button:hover {
   transition: opacity 0.3s;
 }
 
-/* Estilo de erro nos campos */
 input.erro {
   border: 2px solid red;
   background-color: #ffe5e5;
+}
+
+/* RESPONSIVIDADE */
+
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    padding: 25px 30px;
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+}
+
+/* Celulares (até 768px) */
+@media (max-width: 768px) {
+  body {
+    background-size: 100px;
+    padding: 10px;
+  }
+
+  .container {
+    padding: 20px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(255, 182, 193, 0.2);
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  input, button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  button {
+    margin-top: 15px;
+  }
+
+  #mensagem {
+    font-size: 14px;
+  }
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  input, button {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .container::before {
+    font-size: 24px;
+    top: -15px;
+    right: -10px;
+  }
 }
